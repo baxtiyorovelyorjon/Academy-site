@@ -1,0 +1,9 @@
+from django import forms
+
+from news.models import Application
+
+
+class ApplicationForm(forms.ModelForm):
+    class Meta:
+        model = Application
+        fields = ['client_name','client_last_name','course','client_phone_number']
